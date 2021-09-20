@@ -1,2 +1,2 @@
 # media-queries
-My Execution of Media Queries Tutorial
+Media Queries in CSS
