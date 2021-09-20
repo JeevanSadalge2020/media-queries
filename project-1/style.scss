@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  body {
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+}
+
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+$color-1: red; // Mobile
+$color-2: crimson; // Tablet
+$color-3: green; // Laptop
+$color-4: yellow; // Desktop
+
+#size {
+  position: absolute;
+
+  // positioning screen size below our main text
+  top: 60%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  color: black;
+  font-size: 35px;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+}
+
+.text {
+  // keep it blank for now
+}
+
+.container {
+  @media screen and (max-width: $desktop) {
+    background-color: $color-4;
+  }
+  @media screen and (max-width: $laptop) {
+    background-color: $color-3;
+  }
+  @media screen and (max-width: $tablet) {
+    background-color: $color-2;
+  }
+  @media screen and (max-width: $mobile) {
+    background-color: $color-1;
+  }
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+* body {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+#size {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 35px;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: crimson;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */
